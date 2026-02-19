@@ -10,31 +10,7 @@ sentence-transformers==3.3.1
 faiss-cpu==1.9.0
 biopython==1.84
 numpy==1.26.4
-```
 
----
 
-## 📄 **File 4: `.gitignore`**
-```
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-*.egg-info/
 
-# Models (don't commit large files)
-*.bin
-*.safetensors
-models/
 
-# Environment
-.env
-.DS_Store
-
-# IDE
-.vscode/
-.idea/

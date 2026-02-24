@@ -2,8 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![HF Spaces](https://img.shields.io/badge/🤗-HuggingFace%20Spaces-yellow)](https://huggingface.co/spaces/Yogeshwarirj/medpanel_api)
-[![HF Spaces](https://img.shields.io/badge/🤗-HuggingFace%20Spaces-yellow)](https://huggingface.co/spaces/Yogeshwarirj/benchmark_test)
+[![HF Spaces](https://img.shields.io/badge/🤗-MedPanel-yellow)](https://huggingface.co/spaces/Yogeshwarirj/medpanel_api)
+[![HF Spaces](https://img.shields.io/badge/🤗-Benchmark-yellow)](https://huggingface.co/spaces/Yogeshwarirj/benchmark_test)
 
 **Adversarial AI that catches dangerous missed diagnoses**
 

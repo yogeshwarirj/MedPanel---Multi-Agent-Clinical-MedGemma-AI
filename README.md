@@ -5,7 +5,7 @@
 
 ## Team - Just Me
 
-**Yogeshwari R.J** — AI Engineer, Solo Developer & Researcher
+**Yogeshwari R.J** — AI Engineer, Developer & Researcher
 
 I built this **solo** — architecture, agents, RAG pipeline, deployment, everything. My background sits at the intersection of **AI and healthcare**, and this started from a question I couldn't stop asking: **what happens when a medical AI is wrong and there's genuinely nothing to catch it?** MedPanel is where that question led me.
 

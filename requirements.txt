@@ -1,0 +1,24 @@
+# requirements.txt
+# All dependencies for MedPanel on HuggingFace Spaces.
+# HF Spaces installs these automatically before launching app.py.
+
+# ── Core ML ──────────────────────────────────────────────────────────
+torch>=2.0.0
+transformers>=4.49.0
+accelerate>=0.27.0
+
+# ── MedGemma Specific ────────────────────────────────────────────────
+# Required for AutoModelForImageTextToText and multimodal processing
+Pillow>=10.0.0
+
+# ── PubMed RAG ───────────────────────────────────────────────────────
+sentence-transformers>=2.7.0
+faiss-cpu>=1.7.4
+biopython>=1.83
+numpy>=1.24.0
+
+# ── Gradio Interface ─────────────────────────────────────────────────
+gradio>=4.0.0
+
+# ── HuggingFace Hub ──────────────────────────────────────────────────
+huggingface-hub>=0.23.0

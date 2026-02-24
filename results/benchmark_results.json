@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "total_cases": 10,
+    "single_accuracy": 70.0,
+    "medpanel_accuracy": 100.0,
+    "improvement": 30.0,
+    "devils_advocate_saves": 3
+  },
+  "by_difficulty": {
+    "easy": {"count": 3, "single": 66.7, "medpanel": 100.0},
+    "medium": {"count": 3, "single": 66.7, "medpanel": 100.0},
+    "hard": {"count": 4, "single": 75.0, "medpanel": 100.0}
+  },
+  "cases": [
+    {"id": 1, "condition": "Tuberculosis", "difficulty": "hard", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 2, "condition": "Meningitis", "difficulty": "hard", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 3, "condition": "Myocardial Infarction", "difficulty": "easy", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 4, "condition": "Interstitial Lung Disease", "difficulty": "medium", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 5, "condition": "Hypoglycemia", "difficulty": "easy", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 6, "condition": "Ectopic Pregnancy", "difficulty": "hard", "single_correct": false, "medpanel_correct": true, "devils_advocate_helped": true},
+    {"id": 7, "condition": "Spinal Cord Compression", "difficulty": "medium", "single_correct": false, "medpanel_correct": true, "devils_advocate_helped": true},
+    {"id": 8, "condition": "Malaria", "difficulty": "medium", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 9, "condition": "Subarachnoid Hemorrhage", "difficulty": "hard", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
+    {"id": 10, "condition": "Cholecystitis", "difficulty": "easy", "single_correct": false, "medpanel_correct": true, "devils_advocate_helped": true}
+  ]
+}

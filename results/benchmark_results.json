@@ -1,26 +1,251 @@
+📄 FULL JSON OUTPUT (copy from here if file download fails):
+======================================================================
 {
   "summary": {
     "total_cases": 10,
     "single_accuracy": 70.0,
-    "medpanel_accuracy": 100.0,
-    "improvement": 30.0,
-    "devils_advocate_saves": 3
+    "medpanel_accuracy": 90.0,
+    "improvement": 20.0,
+    "devils_advocate_saves": 2,
+    "devils_advocate_impact_percent": 20.0
   },
   "by_difficulty": {
-    "easy": {"count": 3, "single": 66.7, "medpanel": 100.0},
-    "medium": {"count": 3, "single": 66.7, "medpanel": 100.0},
-    "hard": {"count": 4, "single": 75.0, "medpanel": 100.0}
+    "easy": {
+      "count": 3,
+      "single_accuracy": 66.7,
+      "medpanel_accuracy": 100.0,
+      "improvement": 33.3
+    },
+    "medium": {
+      "count": 3,
+      "single_accuracy": 66.7,
+      "medpanel_accuracy": 66.7,
+      "improvement": 0.0
+    },
+    "hard": {
+      "count": 4,
+      "single_accuracy": 75.0,
+      "medpanel_accuracy": 100.0,
+      "improvement": 25.0
+    }
   },
-  "cases": [
-    {"id": 1, "condition": "Tuberculosis", "difficulty": "hard", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 2, "condition": "Meningitis", "difficulty": "hard", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 3, "condition": "Myocardial Infarction", "difficulty": "easy", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 4, "condition": "Interstitial Lung Disease", "difficulty": "medium", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 5, "condition": "Hypoglycemia", "difficulty": "easy", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 6, "condition": "Ectopic Pregnancy", "difficulty": "hard", "single_correct": false, "medpanel_correct": true, "devils_advocate_helped": true},
-    {"id": 7, "condition": "Spinal Cord Compression", "difficulty": "medium", "single_correct": false, "medpanel_correct": true, "devils_advocate_helped": true},
-    {"id": 8, "condition": "Malaria", "difficulty": "medium", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 9, "condition": "Subarachnoid Hemorrhage", "difficulty": "hard", "single_correct": true, "medpanel_correct": true, "devils_advocate_helped": false},
-    {"id": 10, "condition": "Cholecystitis", "difficulty": "easy", "single_correct": false, "medpanel_correct": true, "devils_advocate_helped": true}
+  "detailed_results": [
+    {
+      "case_id": 1,
+      "case_summary": "65 year old male. Persistent cough for 6 weeks. Night sweats, 8kg weight loss ov",
+      "ground_truth": "Tuberculosis",
+      "difficulty": "hard",
+      "single": {
+        "correct": true,
+        "time": 15.12,
+        "response": "Based on the provided clinical case, the primary diagnosis is **reactivation tuberculosis (TB)**.\n\n**Reasoning:**\n\n*   **Persistent cough:** A hallmark symptom of TB.\n*   **Night sweats:** Another common symptom of TB.\n*   **Weight loss:** Suggests a",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "Tuberculosis (TB)",
+        "confidence": 95,
+        "escalated": true,
+        "time": 64.04,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 2,
+      "case_summary": "45 year old female. Severe headache for 3 days. Fever 39\u00b0C, stiff neck, photopho",
+      "ground_truth": "Meningitis",
+      "difficulty": "hard",
+      "single": {
+        "correct": true,
+        "time": 4.34,
+        "response": "Based on the clinical presentation of a 45-year-old female with severe headache for 3 days, fever (39\u00b0C), stiff neck, photophobia, and confusion, the primary diagnosis is **Meningitis**.",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "Meningitis (bacterial or viral)",
+        "confidence": 90,
+        "escalated": true,
+        "time": 62.76,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 3,
+      "case_summary": "30 year old male. Sudden onset crushing chest pain radiating to left arm. Sweati",
+      "ground_truth": "Myocardial Infarction",
+      "difficulty": "easy",
+      "single": {
+        "correct": true,
+        "time": 1.51,
+        "response": "Primary Diagnosis: **Acute Myocardial Infarction (AMI)**",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "Acute Coronary Syndrome (ACS)",
+        "confidence": 90,
+        "escalated": true,
+        "time": 53.4,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 4,
+      "case_summary": "55 year old female. Progressive dyspnea over 3 months. Chronic dry cough. Known ",
+      "ground_truth": "Interstitial Lung Disease",
+      "difficulty": "medium",
+      "single": {
+        "correct": true,
+        "time": 15.88,
+        "response": "Based on the information provided, the primary diagnosis is **Interstitial Lung Disease (ILD)**.\n\n**Reasoning:**\n\n*   **Progressive dyspnea:** This is a hallmark symptom of ILD.\n*   **Chronic dry cough:** Also a common symptom of ILD.\n*   **Rheumatoi",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "{'raw_response': '{\\n  \"primary_diagnosis\": \"Interstitial Lung Disease (ILD)\",\\n  \"differential_diagnoses\": [\\n    \"Rheumatoid Lung Disease\",\\n    \"He",
+        "confidence": "N/A",
+        "escalated": false,
+        "time": 73.87,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 5,
+      "case_summary": "70 year old male. Confusion and lethargy for 2 days. Blood sugar 35 mg/dL. Histo",
+      "ground_truth": "Hypoglycemia",
+      "difficulty": "easy",
+      "single": {
+        "correct": true,
+        "time": 1.11,
+        "response": "Primary Diagnosis: **Hypoglycemia**",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "{'raw_response': '{\\n  \"primary_diagnosis\": \"Hypoglycemia due to insulin overdose or missed/delayed meals\",\\n  \"differential_diagnoses\": [\\n    \"Infec",
+        "confidence": "N/A",
+        "escalated": false,
+        "time": 61.94,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 6,
+      "case_summary": "22 year old female. Severe lower abdominal pain, right-sided. Fever, nausea, ele",
+      "ground_truth": "Ectopic Pregnancy",
+      "difficulty": "hard",
+      "single": {
+        "correct": false,
+        "time": 14.2,
+        "response": "Based on the provided information, the primary diagnosis is **Appendicitis**.\n\n**Reasoning:**\n\n*   **Severe lower abdominal pain, right-sided:** This is a classic symptom of appendicitis.\n*   **Fever:** Suggests an inflammatory process.\n*   **Nausea:",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "Ruptured Ectopic Pregnancy",
+        "confidence": 95,
+        "escalated": true,
+        "time": 67.87,
+        "error": null
+      },
+      "devils_advocate_helped": true
+    },
+    {
+      "case_id": 7,
+      "case_summary": "68 year old male. Progressive weakness in legs over 6 months. Difficulty walking",
+      "ground_truth": "Spinal Cord Compression",
+      "difficulty": "medium",
+      "single": {
+        "correct": false,
+        "time": 17.14,
+        "response": "Based on the provided information, the primary diagnosis is **Spinal Stenosis**.\n\n**Reasoning:**\n\n*   **Progressive leg weakness:** This is a hallmark symptom of spinal stenosis, where the spinal canal narrows and compresses the spinal cord and/or ne",
+        "error": null
+      },
+      "medpanel": {
+        "correct": false,
+        "diagnosis": "Spinal Cord Compression",
+        "confidence": 85,
+        "escalated": true,
+        "time": 58.73,
+        "error": null
+      },
+      "devils_advocate_helped": true
+    },
+    {
+      "case_id": 8,
+      "case_summary": "35 year old male. High fever 40\u00b0C for 5 days. Recent travel to malaria-endemic r",
+      "ground_truth": "Malaria",
+      "difficulty": "medium",
+      "single": {
+        "correct": true,
+        "time": 8.02,
+        "response": "Based on the provided clinical case, the primary diagnosis is **Malaria**.\n\nThe combination of:\n\n*   High fever (40\u00b0C) for 5 days\n*   Recent travel to a malaria-endemic region\n*   Headache, muscle aches, and shaking chills\n\nstrongly suggests malaria.",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "{'raw_response': '{\\n  \"primary_diagnosis\": \"Malaria\",\\n  \"differential_diagnoses\": [\\n    \"Influenza\",\\n    \"Other infectious disease (e.g., dengue f",
+        "confidence": "N/A",
+        "escalated": false,
+        "time": 73.29,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 9,
+      "case_summary": "28 year old female. Sudden severe headache, worst of life. Started 1 hour ago du",
+      "ground_truth": "Subarachnoid Hemorrhage",
+      "difficulty": "hard",
+      "single": {
+        "correct": true,
+        "time": 6.49,
+        "response": "Primary Diagnosis: **Subarachnoid Hemorrhage (SAH)**\n\nRationale:\n\nThe patient's presentation of a sudden, severe headache (\"worst of life\"), onset during exercise, accompanied by neck pain, nausea, and vomiting, is highly suggestive of a subarachnoid",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "{'raw_response': '{\\n  \"primary_diagnosis\": \"Cerebral venous sinus thrombosis (CVST)\",\\n  \"differential_diagnoses\": [\\n    \"Subarachnoid hemorrhage (S",
+        "confidence": "N/A",
+        "escalated": false,
+        "time": 66.48,
+        "error": null
+      },
+      "devils_advocate_helped": false
+    },
+    {
+      "case_id": 10,
+      "case_summary": "50 year old male. Right upper quadrant pain for 8 hours. Pain radiates to should",
+      "ground_truth": "Cholecystitis",
+      "difficulty": "easy",
+      "single": {
+        "correct": false,
+        "time": 14.58,
+        "response": "Based on the provided clinical case, the primary diagnosis is **Biliary Colic**.\n\n**Reasoning:**\n\n*   **Right Upper Quadrant (RUQ) Pain:** This is a classic location for gallbladder issues.\n*   **Radiation to Shoulder:** This is a common symptom of b",
+        "error": null
+      },
+      "medpanel": {
+        "correct": true,
+        "diagnosis": "Cholecystitis",
+        "confidence": 85,
+        "escalated": true,
+        "time": 44.0,
+        "error": null
+      },
+      "devils_advocate_helped": true
+    }
   ]
 }
+======================================================================
+
+✅ Benchmark complete!
+
+
+
+

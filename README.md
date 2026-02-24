@@ -149,7 +149,7 @@ medpanel/
 
 ## 📄 Documentation
 
-- **Full Technical Write-up:** [Kaggle Competition Page](YOUR_KAGGLE_URL)
+- **Full Technical Write-up:** [Kaggle Competition Page]([YOUR_KAGGLE_URL](https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/medpanel-multi-agent-clinical-ai))
 - **Architecture Details:** [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - **Benchmark Analysis:** [docs/BENCHMARKS.md](docs/BENCHMARKS.md)
 
@@ -159,15 +159,15 @@ medpanel/
 
 **Google MedGemma Impact Challenge 2025**  
 **Track:** Agentic Workflow Prize  
-**Submission:** [Kaggle Link](YOUR_KAGGLE_URL)
+**Submission:** [Kaggle Link](https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/medpanel-multi-agent-clinical-ai)
 
 ---
 
 ## 📧 Contact
 
 **Author:** Yogeshwari R.J  
-**Email:** [Your Email]  
-**LinkedIn:** [Your LinkedIn]
+**Email:** rj.yogeshwari@gmail.com 
+**LinkedIn:** www.linkedin.com/in/yyyogeshwarirj
 
 ---
 

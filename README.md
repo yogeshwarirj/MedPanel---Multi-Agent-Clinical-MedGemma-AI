@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![HF Spaces](https://img.shields.io/badge/🤗-HuggingFace%20Spaces-yellow)](https://huggingface.co/spaces/YOUR_USERNAME/medpanel-api)
+[![HF Spaces](https://img.shields.io/badge/🤗-HuggingFace%20Spaces-yellow)](https://huggingface.co/spaces/Yogeshwarirj/medpanel_api)
 
 **Adversarial AI that catches dangerous missed diagnoses**
 
@@ -52,18 +52,21 @@ Patient Case
 
 ---
 
-## 🌐 Live Demos
-
+## Links
 **🎬 Video Demo (3 minutes):**  
-[YOUR_YOUTUBE_URL]
+https://youtu.be/8Cpzc_Nz0qg
 
-**💻 Interactive API:**  
-[https://huggingface.co/spaces/YOUR_USERNAME/medpanel-api](https://huggingface.co/spaces/YOUR_USERNAME/medpanel-api)  
-Try: "22yo female, lower abdominal pain, fever, last period 6 weeks ago"
+**🌐 Live Interactive Demo:**  
+https://huggingface.co/spaces/Yogeshwarirj/medpanel_api
+**Try:** _"22 year old female. Severe lower abdominal pain, right-sided. Fever, nausea, elevated WBC. Last menstrual period 6 weeks ago.o"_  
+**Watch _Devil's Advocate_ catch _ectopic pregnancy_ in real-time**
 
-**📊 Benchmark Comparison:**  
-[https://huggingface.co/spaces/YOUR_USERNAME/medpanel-benchmark](https://huggingface.co/spaces/YOUR_USERNAME/medpanel-benchmark)  
-Interactive: See all 10 test cases
+**📊 Live Benchmark Results:**  
+https://huggingface.co/spaces/Yogeshwarirj/benchmark_test  
+**Full comparison:** _Single MedGemma vs MedPanel_ on **10 test cases**  
+**Interactive** — _run 10 cases yourself_.  
+Test cases are in the file **`benchmark_cases.py`**.
+
 
 ---
 
@@ -105,12 +108,16 @@ medpanel/
 ├── src/
 │   ├── medpanel.py          # Core multi-agent system
 │   ├── app.py               # Gradio API interface
+|── benchmark/
 │   └── benchmark_app.py     # Benchmark comparison UI
+|   ├── benchmark.py          # compare single Ai vs MedPanel multi agent AI
+|   ├── benchmark_cases.py     # All 10 test cases
 ├── results/
 │   └── benchmark_results.json  # Full test results
 ├── docs/
 │   ├── ARCHITECTURE.md      # System design
 │   └── BENCHMARKS.md        # Detailed evaluation
+│   └── Impacts.md        # Detailed evaluation
 └── requirements.txt
 ```
 

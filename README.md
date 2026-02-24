@@ -118,7 +118,7 @@ medpanel/
 ├── docs/
 │   ├── ARCHITECTURE.md      # System design
 │   └── BENCHMARKS.md        # Detailed evaluation
-│   └── Impacts.md        # Detailed evaluation
+│   └── IMPACTS.md        # Detailed evaluation
 └── requirements.txt
 ```
 

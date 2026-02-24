@@ -3,7 +3,7 @@
 
 ---
 
-## Your Team
+## Team - Just Me
 
 **Yogeshwari R.J** — AI Engineer, Solo Developer & Researcher
 
